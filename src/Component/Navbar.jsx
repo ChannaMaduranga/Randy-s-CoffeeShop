@@ -1,14 +1,34 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import logo from '../assets/logo.png';
 import { motion } from "framer-motion";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+          if (window.scrollY > 50) {
+            setIsScrolled(true);
+          } else {
+            setIsScrolled(false);
+          }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
     return (
-        <nav className={`fixed top-0   md:opacity-100 md:bg-transparent left-0 w-full z-50 text-white font-semibold  ${isOpen ? 'bg-black opacity-80' : 'bg-transparent'}`}>
-            <div className="max-w-8xl mx-auto px-8 sm:px-6 md:px-64">
+        <nav
+  className={`fixed top-0 left-0 w-full z-50 text-white font-semibold transition-all duration-300 
+    ${isOpen ? 'bg-black opacity-90' : isScrolled ? 'bg-black opacity-95' : 'bg-transparent'}`}
+>
+
+            <div className="w-[80%] lg:w-[60%] mx-auto">
                 <div className="flex justify-between h-24 items-center">
                     {/* Logo */}
                     <div className="text-2xl font-bold ">
@@ -16,10 +36,10 @@ const Navbar = () => {
                     </div>
 
                     {/* Desktop Menu */}
-                    <div className="hidden md:flex space-x-6 font-outfit text-lg">
+                    <div className="hidden md:flex space-x-6 font-outfit text-sm">
                         <a href="#home" className="hover:text-yellow-400">HOME</a>
-                        <a href="#menu" className="hover:text-yellow-400">MENU</a>
                         <a href="#about" className="hover:text-yellow-400">ABOUT</a>
+                        <a href="#menu" className="hover:text-yellow-400">MENU</a>
                         <a href="#contact" className="hover:text-yellow-400">CONTACT</a>
                     </div>
 

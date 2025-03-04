@@ -64,16 +64,16 @@ const Header = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent"></div>
 
               {/* Header Text */}
-              <div className="absolute inset-0 flex flex-col justify-center items-start w-[90%] sm:w-[70%] md:w-[70%] xl:w-[65%] p-[5%] md:p-[10%]">
-                <h1 className="text-white text-3xl sm:text-5xl md:text-7xl font-bold text-left transition-all duration-500 px-4">
+              <div className="absolute inset-0 flex flex-col justify-center items-start w-[90%] sm:w-[70%] md:w-[70%] xl:w-[65%] p-[5%] md:p-[10%] lg:p-[15%]">
+                <h1 className="text-white text-transform: uppercase text-3xl sm:text-5xl md:text-7xl font-bold text-left transition-all duration-500 px-4">
                   {currentText}
                 </h1>
                 <p className="text-white text-sm pt-4 md:pt-12 md:text-2xl font-medium text-left transition-all duration-500 px-4">
                   {currentSubline}
                 </p>
                 <div className="mt-8 pl-4">
+                  <button type="button" class="text-white bg-transparent border-2 border-white hover:bg-white  hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2">About Us</button>
                   <button type="button" class="text-white bg-transparent border-2 border-white hover:bg-white  hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2">View Menu</button>
-                  <button type="button" class="text-white bg-transparent border-2 border-white hover:bg-white  hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2">Visit Our shop</button>
                 </div>
               </div>
             </div>
