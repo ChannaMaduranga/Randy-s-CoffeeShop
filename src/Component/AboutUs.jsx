@@ -12,21 +12,21 @@ function AboutUs() {
                 <img className='object-contain w-full h-28 mx-auto mt-[-24px]' src={coffeeCup} alt='Coffee Leaves' />
             </div>
             <div className='w-[%] mx-auto'>
-                <p className='text-lg lg:text-base lg:w-[60%] lg:mx-auto text-center mt-8'>
+                <p className='text-base lg:text-base lg:w-[60%] px-8 lg:mx-auto text-center mt-8'>
                     Randy's Coffee House is a family-owned and operated establishment located in Bentota, specializing in crafting the perfect cup of coffee. Our team of highly skilled baristas, passionate about creating memorable moments, works tirelessly to bring you the finest coffee experience.
                 </p>
 
-                <p className='text-lg lg:text-base lg:w-[60%] lg:mx-auto text-center mt-8'>
+                <p className='text-base px-8 lg:text-base lg:w-[60%] lg:mx-auto text-center mt-8'>
                     Come join us on this journey of discovery and experience the magic of Randy's Coffee House!
                 </p>
             </div>
             <div className=' bg-[#FFF0DC] flex flex-col lg:mx-auto my-8 lg:my-16 pb-8 lg:flex-row-reverse'>
-                <div className='w-full  p-12 lg:pl-0 '>
-                    <img className='object-contain w-full lg:h-[40vh] mx-auto ' src={coffee} alt='Coffee' />
+                <div className='w-full  p-12 md:p-24 lg:pl-0 '>
+                    <img className='object-contain w-full sm:h-[40vh] md:h-[40vh] lg:h-[40vh] mx-auto ' src={coffee} alt='Coffee' />
 
                 </div>
                 <div className='w-[80%] lg:w-full lg:pl-[15%] justify-center flex flex-col items-left mx-auto '>
-                    <h3 className='font-semibold text-2xl lg:text-4xl pb-4'>
+                    <h3 className='font-semibold text-2xl lg:text-4xl pb-8 lg:pt-8 xl:pt-0'>
                         OUR HISTORY
                     </h3>
                     <p className='text-lg font-light text-justify'>

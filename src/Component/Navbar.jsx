@@ -28,7 +28,7 @@ const Navbar = () => {
     ${isOpen ? 'bg-black opacity-90' : isScrolled ? 'bg-black opacity-95' : 'bg-transparent'}`}
 >
 
-            <div className="w-[80%] lg:w-[60%] mx-auto">
+            <div className="w-[80%] lg:w-[70%] mx-auto">
                 <div className="flex justify-between h-24 items-center">
                     {/* Logo */}
                     <div className="text-2xl font-bold ">
