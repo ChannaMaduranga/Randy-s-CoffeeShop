@@ -5,7 +5,7 @@ import coffee from '../assets/coffee.jpg'
 
 function AboutUs() {
     return (
-        <div className='my-8 lg:my-24'>
+        <div className='my-8 lg:my-16'>
             <div className='justify-center items-center flex flex-col'>
                 <img className='object-contain w-full h-16 mx-auto' src={coffeeImg} alt='Coffee Leaves' />
                 <h2 className='text-2xl lg:text-4xl font-semibold text-center'>ABOUT <br></br> RANDY'S COFFEE HOUSE</h2>

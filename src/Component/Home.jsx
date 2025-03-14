@@ -3,6 +3,7 @@ import Header from './Header'
 import AboutUs from './AboutUs'
 import Menu from './Menu'
 import Gallery from './Gallery'
+import Feedback from './Feedback'
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
             <AboutUs/>
             <Menu/>
             <Gallery/>
+            <Feedback/>
         </div>
     </div>
   )
