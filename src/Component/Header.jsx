@@ -71,9 +71,9 @@ const Header = () => {
                 <p className="text-white text-sm pt-4 md:pt-12 md:text-2xl font-medium text-left transition-all duration-500 px-4">
                   {currentSubline}
                 </p>
-                <div className="mt-8 pl-4">
-                  <button type="button" class="text-white bg-transparent border-2 border-white hover:bg-white  hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2">About Us</button>
-                  <button type="button" class="text-white bg-transparent border-2 border-white hover:bg-white  hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2">View Menu</button>
+                <div className="mt-8 pl-4 ">
+                  <button type="button" class="text-white bg-transparent border-2 border-white hover:bg-white  hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 ">About Us</button>
+                  <button type="button" class="text-white bg-transparent border-2 border-white hover:bg-white  hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 lg:ml-4">View Menu</button>
                 </div>
               </div>
             </div>
