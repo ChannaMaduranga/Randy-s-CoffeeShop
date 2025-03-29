@@ -8,18 +8,18 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 
 function Contact() {
   return (
-    <div>
-      <div className='my-12 lg:my-16'>
+    <div className='lg:my-16' id='contact'>
+      <div className='my-12 lg:my-16 '>
 
         <h2 className='text-2xl lg:text-4xl text-[#3e3e3e] font-semibold text-center'>Get In Touch</h2>
         <p className='text-lg font-light text-center'>Let’s talk over coffee – we’d love to hear from you!</p>
         <img className='object-contain w-full h-28 mx-auto mt-[-24px]' src={coffeeCup} alt='Coffee Leaves' />
 
-        <div className='flex justify-center items-center gap-4 mt-8'>
-          <span className='text-lg lg:text-2xl font-semibold'>
+        <div className='flex justify-center items-center gap-4 mt-8 border-2 w-[50%] md:w-[15%] mx-auto p-4 rounded-4xl'>
+          <span className=' lg:text-2xl font-semibold'>
             <MdOutlineLocalPhone />
           </span>
-          <h3 className="text-lg lg:text-2xl font-medium text-center text-gray-800  ">  +94 76 045 1111</h3>
+          <h3 className=" lg:text-2xl font-medium text-center text-gray-800  ">  +94 76 045 1111</h3>
         </div>
 
         <div className='flex justify-center items-center gap-4 my-4'>
@@ -78,7 +78,7 @@ function Contact() {
 
 
       </div>
-      <div className='lg:w-[80%] flex justify-center mx-auto'>
+      <div className='lg:w-[80%] lg:flex justify-center mx-auto'>
         <div className='lg:w-1/2 p-8'>
           <iframe
             title="Google Map"
@@ -115,7 +115,7 @@ function Contact() {
             {/* Sunday */}
             <div>
               <p className="lg:text-xl font-semibold text-gray-800">Sunday</p>
-              <p className="text-gray-700 text-lg">09:00AM – 09:00PM</p>
+              <p className="text-gray-700 lg:text-lg">09:00AM – 09:00PM</p>
             </div>
           </div>
 
