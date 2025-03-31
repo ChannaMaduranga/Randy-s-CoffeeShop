@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import logo from "../assets/logo.png"
+import { Link } from "react-scroll";
 
 
 function Footer() {
@@ -16,10 +17,10 @@ function Footer() {
         
         {/* Navigation Links */}
         <nav className="space-y-2 text-center text-[#e9e9e9] md:">
-          <a href="/" className="block hover:text-[#fcb46b]">Home</a>
-          <a href="/menu" className="block hover:text-[#fcb46b]">Menu</a>
-          <a href="/about" className="block hover:text-[#fcb46b]">About</a>
-          <a href="/contact" className="block hover:text-[#fcb46b]">Contact</a>
+           <Link to="home" smooth={true} duration={500} className="block hover:text-[#fcb46b]">Home</Link>
+           <Link to="about" smooth={true} duration={500} className="block hover:text-[#fcb46b]">About</Link>
+          <Link to="menu" smooth={true} duration={500} className="block hover:text-[#fcb46b]">Menu</Link>
+         <Link to="contact" smooth={true} duration={500} className="block hover:text-[#fcb46b]">Contact</Link>
         </nav>
         
         {/* Social Media Links */}

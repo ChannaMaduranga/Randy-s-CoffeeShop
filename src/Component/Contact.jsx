@@ -15,11 +15,11 @@ function Contact() {
         <p className='text-lg font-light text-center'>Let’s talk over coffee – we’d love to hear from you!</p>
         <img className='object-contain w-full h-28 mx-auto mt-[-24px]' src={coffeeCup} alt='Coffee Leaves' />
 
-        <div className='flex justify-center items-center gap-4 mt-8 border-2 w-[50%] md:w-[15%] mx-auto p-4 rounded-4xl'>
+        <div className='flex justify-center items-center gap-4 mt-8 border-2 w-[50%] md:w-[15%] lg:w-[20%] mx-auto p-4 rounded-4xl'>
           <span className=' lg:text-2xl font-semibold'>
             <MdOutlineLocalPhone />
           </span>
-          <h3 className=" lg:text-2xl font-medium text-center text-gray-800  ">  +94 76 045 1111</h3>
+          <h3 className="  lg:text-xl font-medium text-center text-gray-800  ">  +94 76 045 1111</h3>
         </div>
 
         <div className='flex justify-center items-center gap-4 my-4'>

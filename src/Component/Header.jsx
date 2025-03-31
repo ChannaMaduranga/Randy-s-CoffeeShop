@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, EffectFade } from "swiper/modules";
+import { useNavigate, useLocation } from "react-router-dom";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade"; // Add fade effect styles
@@ -8,6 +10,7 @@ import "swiper/css/effect-fade"; // Add fade effect styles
 import img1 from "../assets/2.jpg";
 import img2 from "../assets/1.jpg";
 import img3 from "../assets/3.jpg";
+import { Link } from "react-scroll";
 
 const slides = [
   {
@@ -35,6 +38,25 @@ const slides = [
 const Header = () => {
   const [currentText, setCurrentText] = useState(slides[0].text);
   const [currentSubline, setCurrentSubline] = useState(slides[0].subline);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
+    const location = useLocation(); // ✅ Get the current route
+
+  useEffect(() => {
+          const handleScroll = () => {
+              if (window.scrollY > 50 || location.pathname !== "/") {
+                  setIsScrolled(true);
+              } else {
+                  setIsScrolled(false);
+              }
+          };
+  
+          window.addEventListener("scroll", handleScroll);
+          return () => {
+              window.removeEventListener("scroll", handleScroll);
+          };
+      }, [location.pathname]); // ✅
+
 
   return (
     <div className="relative w-full h-[100vh]">
@@ -72,8 +94,8 @@ const Header = () => {
                   {currentSubline}
                 </p>
                 <div className="mt-8 pl-4 ">
-                  <button type="button" class="text-white bg-transparent border-2 border-white hover:bg-white  hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 ">About Us</button>
-                  <button type="button" class="text-white bg-transparent border-2 border-white hover:bg-white  hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 lg:ml-4">View Menu</button>
+                 <Link to="about" smooth={true} duration={500}>  <button type="button" class="text-white bg-transparent border-2 border-white hover:bg-white  hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 ">About Us</button></Link>
+                 <Link to="menu" smooth={true} duration={500}> <button type="button" class="text-white bg-transparent border-2 border-white hover:bg-white  hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 lg:ml-4">View Menu</button></Link>
                 </div>
               </div>
             </div>
