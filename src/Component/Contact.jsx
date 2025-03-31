@@ -15,7 +15,7 @@ function Contact() {
         <p className='text-lg font-light text-center px-8'data-aos="fade-up">Let’s talk over coffee – we’d love to hear from you!</p>
         <img className='object-contain w-full h-28 mx-auto mt-[-24px]' src={coffeeCup} alt='Coffee Leaves' data-aos="fade-up" />
 
-        <div className='flex justify-center items-center gap-4 mt-8 border-2 w-[50%] md:w-[15%] lg:w-[20%] mx-auto p-4 rounded-4xl' data-aos="fade-up">
+        <div className='flex justify-center items-center gap-4 mt-8 border-2 w-[50%] md:w-[25%] lg:w-[20%] mx-auto p-4 rounded-4xl' data-aos="fade-up">
           <span className=' lg:text-2xl font-semibold'>
             <MdOutlineLocalPhone />
           </span>
