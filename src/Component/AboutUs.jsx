@@ -5,13 +5,13 @@ import coffee from '../assets/coffee.jpg'
 
 function AboutUs() {
     return (
-        <div className='my-8 lg:my-16 ' id='about'>
-            <div className='justify-center items-center flex flex-col'>
+        <div className='my-8 lg:my-16 ' id='about' >
+            <div className='justify-center items-center flex flex-col' data-aos="fade-up">
                 <img className='object-contain w-full h-16 mx-auto' src={coffeeImg} alt='Coffee Leaves' />
                 <h2 className='text-2xl lg:text-4xl font-semibold text-center'>ABOUT <br></br> RANDY'S COFFEE HOUSE</h2>
                 <img className='object-contain w-full h-28 mx-auto mt-[-24px]' src={coffeeCup} alt='Coffee Leaves' />
             </div>
-            <div className='w-[%] mx-auto'>
+            <div className='w-[%] mx-auto' data-aos="fade-up">
                 <p className='text-base lg:text-base lg:w-[60%] px-8 lg:mx-auto text-center mt-8'>
                     Randy's Coffee House is a family-owned and operated establishment located in Bentota, specializing in crafting the perfect cup of coffee. Our team of highly skilled baristas, passionate about creating memorable moments, works tirelessly to bring you the finest coffee experience.
                 </p>
@@ -20,12 +20,12 @@ function AboutUs() {
                     Come join us on this journey of discovery and experience the magic of Randy's Coffee House!
                 </p>
             </div>
-            <div className=' bg-[#FFF0DC] flex flex-col lg:mx-auto my-8 lg:my-16 pb-8 lg:flex-row-reverse'>
-                <div className='w-full  p-12 md:p-24 lg:pl-0 '>
+            <div className=' bg-[#FFF0DC] flex flex-col lg:mx-auto my-8 lg:my-16 pb-8 lg:flex-row-reverse' >
+                <div className='w-full  p-12 md:p-24 lg:pl-0 ' data-aos="fade-left">
                     <img className='object-contain w-full sm:h-[40vh] md:h-[40vh] lg:h-[40vh] mx-auto ' src={coffee} alt='Coffee' />
 
                 </div>
-                <div className='w-[80%] lg:w-full lg:pl-[15%] justify-center flex flex-col items-left mx-auto '>
+                <div className='w-[80%] lg:w-full lg:pl-[15%] justify-center flex flex-col items-left mx-auto ' data-aos="fade-up">
                     <h3 className='font-semibold text-2xl lg:text-4xl pb-8 lg:pt-8 xl:pt-0'>
                         OUR HISTORY
                     </h3>

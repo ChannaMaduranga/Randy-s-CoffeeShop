@@ -87,15 +87,15 @@ const Header = () => {
 
               {/* Header Text */}
               <div className="absolute inset-0 flex flex-col justify-center items-start w-[90%] sm:w-[70%] md:w-[70%] xl:w-[65%] p-[5%] md:p-[10%] lg:p-[15%]">
-                <h1 className="text-white text-transform: uppercase text-3xl sm:text-5xl md:text-7xl font-bold text-left transition-all duration-500 px-4">
+                <h1 className="text-white text-transform: uppercase text-3xl sm:text-5xl md:text-7xl font-bold text-left transition-all duration-500 px-4" data-aos="fade-up">
                   {currentText}
                 </h1>
-                <p className="text-white text-sm pt-4 md:pt-12 md:text-2xl font-medium text-left transition-all duration-500 px-4">
+                <p className="text-white text-sm pt-4 md:pt-12 md:text-2xl font-medium text-left transition-all duration-500 px-4" data-aos="fade-up">
                   {currentSubline}
                 </p>
                 <div className="mt-8 pl-4 ">
-                 <Link to="about" smooth={true} duration={500}>  <button type="button" class="text-white bg-transparent border-2 border-white hover:bg-white  hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 ">About Us</button></Link>
-                 <Link to="menu" smooth={true} duration={500}> <button type="button" class="text-white bg-transparent border-2 border-white hover:bg-white  hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 lg:ml-4">View Menu</button></Link>
+                 <Link to="about" smooth={true} duration={500} offset={-150}>  <button type="button" class="text-white bg-transparent border-2 border-white hover:bg-white  hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 " data-aos="fade-up">About Us</button></Link>
+                 <Link to="menu" smooth={true} duration={500} offset={-150}> <button type="button" class="text-white bg-transparent border-2 border-white hover:bg-white  hover:text-black focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 lg:ml-4" data-aos="fade-up">View Menu</button></Link>
                 </div>
               </div>
             </div>

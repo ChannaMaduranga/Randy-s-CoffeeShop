@@ -72,14 +72,14 @@ const getInitials = (name) => {
 function Feedback() {
     return (
         <div className='my-12 lg:my-16'>
-            <h2 className='text-xl lg:text-4xl font-semibold text-center text-[#af5811]'>Customer Reviews</h2>
-            <h2 className='text-2xl lg:text-4xl text-[#3e3e3e] font-semibold text-center'>Over 100+ People trust us</h2>
-            <p className='text-lg font-light text-center'>See what our satisfied customers are saying about us</p>
+            <h2 className='text-xl lg:text-4xl font-semibold text-center text-[#af5811]' data-aos="fade-up">Customer Reviews</h2>
+            <h2 className='text-2xl lg:text-4xl text-[#3e3e3e] font-semibold text-center'data-aos="fade-up">Over 100+ People trust us</h2>
+            <p className='text-lg font-light text-center' data-aos="fade-up">See what our satisfied customers are saying about us</p>
 
-            <img className='object-contain w-full h-28 mx-auto mt-[-24px]' src={coffeeCup} alt='Coffee Leaves' />
+            <img className='object-contain w-full h-28 mx-auto mt-[-24px]' src={coffeeCup} alt='Coffee Leaves' data-aos="fade-up"/>
 
             <div className='w-full h-auto p-12 mt-8 lg:mt-12 bg-[#171717] flex'>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto" data-aos="fade-up">
                     {reviews.map((review, index) => (
                         <div key={index} className="bg-[#272727] p-6 rounded-lg shadow-lg">
                             <div className="flex gap-1 text-yellow-400 mb-2">

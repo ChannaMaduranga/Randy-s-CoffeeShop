@@ -38,7 +38,7 @@ function Footer() {
       </div>
       
     </footer>
-    <div className=" p-4 text-center bg-[#212121] text-white text-sm ">
+    <div className=" p-4  text-center bg-[#212121] text-white text-sm ">
         &copy; {new Date().getFullYear()} Randy's Coffee Shop. All right Reserved. <br /> <span className='text-[#fcb46b]'>Powerd by Channa Maduranga</span>
       </div>
     </div>
