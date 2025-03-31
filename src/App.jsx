@@ -22,7 +22,7 @@ function App() {
   return (
     <>
     
-      <BrowserRouter>
+      <BrowserRouter basename='/Randy-s-CoffeeShop'>
       <Navbar/>
   
      <Routes>
