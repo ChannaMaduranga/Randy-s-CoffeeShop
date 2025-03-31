@@ -22,7 +22,7 @@ function Menu() {
                 <img className='object-contain w-full h-24 lg:h-36 mx-auto' src={Menu2} alt='Menu Item 1' />
                 <h3 className='text-lg lg:text-2xl font-semibold text-center'>Beverages</h3>
             </div>
-            <div className='p-8 mx-16 md:mx-0 hover:bg-[#fbead7]' data-aos="fade-left" onClick={()=>navigate('/menu/dessert')}>
+            <div className='p-8 mx-16 md:mx-0 hover:bg-[#fbead7]' data-aos="fade-up" onClick={()=>navigate('/menu/dessert')}>
                 <img className='object-contain w-full h-24 lg:h-36 mx-auto' src={Menu3} alt='Menu Item 1' />
                 <h3 className='text-lg lg:text-2xl font-semibold text-center'>Dessert</h3>
             </div>

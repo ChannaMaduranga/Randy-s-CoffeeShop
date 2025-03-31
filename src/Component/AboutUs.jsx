@@ -21,7 +21,7 @@ function AboutUs() {
                 </p>
             </div>
             <div className=' bg-[#FFF0DC] flex flex-col lg:mx-auto my-8 lg:my-16 pb-8 lg:flex-row-reverse' >
-                <div className='w-full  p-12 md:p-24 lg:pl-0 ' data-aos="fade-left">
+                <div className='w-full  p-12 md:p-24 lg:pl-0 ' data-aos="fade-up">
                     <img className='object-contain w-full sm:h-[40vh] md:h-[40vh] lg:h-[40vh] mx-auto ' src={coffee} alt='Coffee' />
 
                 </div>
