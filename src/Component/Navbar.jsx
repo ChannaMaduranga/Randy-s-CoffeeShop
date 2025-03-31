@@ -11,6 +11,8 @@ const Navbar = () => {
     const navigate = useNavigate();
     const location = useLocation(); // ✅ Get the current route
 
+    
+
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 50 || location.pathname !== "/") {
@@ -62,10 +64,10 @@ const Navbar = () => {
                 transition={{ duration: 0.4, ease: "easeInOut" }}
                 className="md:hidden bg-brown-700 text-center overflow-hidden text-[#dac5a7]"
             >
-                <Link to="home" smooth={true} duration={500} className="block hover:text-yellow-400 py-2 cursor-pointer">HOME</Link>
-                <Link to="menu" smooth={true} duration={500}  className="block hover:text-yellow-400 py-2 cursor-pointer">MENU</Link>
+                <Link to="home" smooth={true} duration={500}  className="block hover:text-yellow-400 py-2 cursor-pointer">HOME</Link>
+                <Link to="menu" smooth={true} duration={500} className="block hover:text-yellow-400 py-2 cursor-pointer">MENU</Link>
                 <Link to="about" smooth={true} duration={500}  className="block hover:text-yellow-400 py-2 cursor-pointer">ABOUT</Link>
-                <Link to="contact" smooth={true} duration={500} className="block hover:text-yellow-400 py-2 pb-12 cursor-pointer ">CONTACT</Link>
+                <Link to="contact" smooth={true} duration={500}  className="block hover:text-yellow-400 py-2 pb-12 cursor-pointer ">CONTACT</Link>
             </motion.div>
         </nav>
     );

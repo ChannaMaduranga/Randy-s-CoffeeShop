@@ -15,8 +15,8 @@ function Home() {
     <div>
         <div id='home'>
             <Header/>
-            <AboutUs/>
-            <Menu/>
+            <AboutUs data-aos="fade-up"/>
+            <Menu data-aos="fade-up"/>
             <Gallery/>
             <Feedback/>
             <Contact/>
