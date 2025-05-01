@@ -14,7 +14,7 @@ function Menu() {
          <img className='object-contain w-full h-28 mx-auto mt-[-24px]' src={coffeeCup} alt='Coffee Leaves' data-aos="fade-up"/>
 
          <div className='grid  gap-8 lg:gap-4 md:grid-cols-3 md:mx-8 lg:w-[70%] lg:mx-auto'>
-            <div className='p-8 mx-16 md:mx-0 hover:bg-[#fbead7] cursor-pointer'data-aos="fade-right" onClick={()=>navigate('/menu/breakfast')} >
+            <div className='p-8 mx-16 md:mx-0 hover:bg-[#fbead7] cursor-pointer'data-aos="fade-up" onClick={()=>navigate('/menu/breakfast')} >
                 <img className='object-contain w-full h-24 lg:h-36 mx-auto' src={Menu1} alt='Menu Item 1' />
                 <h3 className='text-lg lg:text-2xl font-semibold text-center'>Breakfast</h3>
             </div>
